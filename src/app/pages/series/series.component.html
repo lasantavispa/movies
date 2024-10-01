@@ -1,0 +1,18 @@
+<section class="section">
+  <h3>SERIES</h3>
+  <div class="section__serie">
+    @for(serie of series; track serie.id) {
+      <app-flix-list-element
+      [title]="serie.name"
+      [average]="serie.vote_average"
+      [date]="serie.first_air_date"
+      [image]="'https://image.tmdb.org/t/p/w500/'+ serie.poster_path"
+      [id]="serie.id"
+      [type]="'series'">
+    </app-flix-list-element>
+    }
+
+  </div>
+
+</section>
+

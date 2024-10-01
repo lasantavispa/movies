@@ -1,0 +1,18 @@
+<div class="container">
+  <app-flix-list-element  [title]="movie.title"
+  [average]="movie.vote_average"
+  [date]="movie.release_date"
+  [image]="'https://image.tmdb.org/t/p/w500/'+ movie.poster_path"
+  [isRated]="ratedMovies[movie.id] || false"
+  ></app-flix-list-element>
+
+  <div class="container__sinopsis">
+    <h3>Synopsis</h3>
+    <p>{{movie.overview}}</p>
+    <button (click)="openModal()" class="container__btn-rating"><i class="fa-solid fa-check"></i> Rating</button>
+  </div>
+</div>
+@if (isModalOpen) {
+  <app-rating-form  [isModalOpen]="isModalOpen"
+  (modalClosed)="isModalOpen = false" (ratingSubmitted)="onRatingSubmitted()" ></app-rating-form>
+}

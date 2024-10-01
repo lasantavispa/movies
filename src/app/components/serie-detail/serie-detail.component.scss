@@ -1,0 +1,40 @@
+.container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+    width: 70vw;
+  }
+
+  &__sinopsis {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 20px;
+  }
+  &__btn-cancel {
+    border: solid 1px white;
+  }
+  &__btn-rating {
+    align-self: flex-end;
+    background: #69c3d9;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    gap: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+}

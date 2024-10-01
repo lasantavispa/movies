@@ -1,0 +1,13 @@
+.section {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  &__movie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}

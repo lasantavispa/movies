@@ -1,0 +1,14 @@
+<section class="section">
+  <h3>MOVIES</h3>
+  <div class="section__movie">
+    @for(movie of movies; track movie.id) {
+      <app-flix-list-element  [title]="movie.title"
+      [average]="movie.vote_average"
+      [date]="movie.release_date"
+      [image]="'https://image.tmdb.org/t/p/w500/'+ movie.poster_path"
+      [id]="movie.id"
+      [type]="'movie'">
+    </app-flix-list-element>
+    }
+  </div>
+</section>

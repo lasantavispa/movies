@@ -1,0 +1,44 @@
+
+
+<div class="card">
+  <div class="card__a" (click)='goToDetail(id)'>
+    <img src={{image}} alt={{title}} class="card__image">
+  </div>
+  <div class="card__details">
+    <div class="card__rating">
+      @if(isRated){
+        <p class="card__rated">Already rated!</p>
+      }
+      <div class="card__average">
+        <p>{{average}}</p>
+        @if(average <= 2){
+          <i class="fa-solid fa-star card__star"></i>
+        } @else if (2 < average && average <= 4) {
+          <i class="fa-solid fa-star card__star"></i>
+          <i class="fa-solid fa-star card__star"></i>
+        } @else if (4 < average && average <= 6) {
+          <i class="fa-solid fa-star card__star"></i>
+          <i class="fa-solid fa-star card__star"></i>
+          <i class="fa-solid fa-star card__star"></i>
+        } @else if (6 < average && average <= 8) {
+          <i class="fa-solid fa-star card__star"></i>
+          <i class="fa-solid fa-star card__star"></i>
+          <i class="fa-solid fa-star card__star"></i>
+          <i class="fa-solid fa-star card__star"></i>
+        } @else if (8 < average && average <= 10) {
+          <i class="fa-solid fa-star card__star"></i>
+          <i class="fa-solid fa-star card__star"></i>
+          <i class="fa-solid fa-star card__star"></i>
+          <i class="fa-solid fa-star card__star"></i>
+          <i class="fa-solid fa-star card__star"></i>
+        }
+
+      </div>
+    </div>
+    <h4 class="card__title">{{title}}</h4>
+    <div class="card__info">
+      <p>{{date}}</p>
+      <p>{{minutes}}</p>
+    </div>
+  </div>
+</div>
