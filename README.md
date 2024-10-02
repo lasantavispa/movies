@@ -1,27 +1,35 @@
-# Flixbuzz
+# Movies
+Web para valorar películas y series
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.6.
+# Descripción
+Este proyecto es una aplicación web desarrollada en Angular 18 que permite a los usuarios valorar peliculas y series. Los usuarios pueden:
+  - Ver una lista de peliculas y series
+  - Consultar información detallada sobre cada una
+  - Valorar con una puntuación
+  - Filtrar el contenido por aquellas ya valoradas
 
-## Development server
+# Instalación y configuración 
+Sigue estos pasos para instalar y ejecutar el proyecto localmente:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+  1. Clona el repositorio
 
-## Code scaffolding
+      git clone https://github.com/lasantavispa/movies.git
+      cd movies 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+  2. Instala las dependecias
 
-## Build
+      npm install
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+  3. Ejecuta el proyecto
 
-## Running unit tests
+      ng serve -o
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Autora
 
-## Running end-to-end tests
+Ángela Ávila Lasanta
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Email: angela.avilasanta@gmail.com
+GitHub: https://github.com/lasantavispa
+  
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
