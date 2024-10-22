@@ -1,7 +1,8 @@
 <div class="modal">
   <i class="fa-solid fa-x modal__close" (click)="closeModal()"></i>
   <h3>Fill out the form</h3>
-  <form  class="form" id="form">
+  <form  id="form">
+    <div class="form">
     <label for="name" class="form__label">
       Name*
       <input type="text" name="name" id="name" required class="form__input" />
@@ -49,8 +50,8 @@
         <option value="5">5 ★★★★★</option>
       </select>
     </label>
-  </form>
-  <div class="form__btns">
+  </div>
+    <div class="form__btns">
     <button class="form__btn-cancel" (click)="closeModal()">
       <img src="Icon.png" alt="icon" class="form__btn-span" />
       <span> Cancel </span>
@@ -60,4 +61,6 @@
       <span> Send </span>
     </button>
   </div>
+  </form>
+
 </div>
