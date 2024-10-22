@@ -19,11 +19,20 @@ export class RatingFormComponent {
     this.modalClosed.emit();
    }
 
-   submitRating(event:Event): void {
-    event.preventDefault();
-    this.ratingSubmitted.emit();
-    this.closeModal();
 
-   }
+  submitRating(event: Event): void {
+    event.preventDefault();
+
+    const form = (event.target as HTMLElement)?.closest('form');
+
+    if (form?.checkValidity()) {
+      // Emit rating submitted event
+      this.ratingSubmitted.emit();
+      this.closeModal();
+    } else {
+      form?.reportValidity();
+      form?.classList.add('was-validated');
+    }
+  }
  }
 

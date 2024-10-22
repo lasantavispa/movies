@@ -22,9 +22,10 @@
     cursor: pointer;
     font-size: 25px;
     justify-self: flex-end;
+    color: white;
     @media (min-width: 768px) {
       display: none;
-    };
+    }
   }
   &__menu {
     display: flex;
@@ -44,7 +45,7 @@
       align-items: center;
       position: initial;
       gap: 25px;
-    };
+    }
   }
   &__link {
     text-decoration: none;
