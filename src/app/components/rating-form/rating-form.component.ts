@@ -1,9 +1,10 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-rating-form',
   standalone: true,
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './rating-form.component.html',
   styleUrl: './rating-form.component.scss'
 })

@@ -34,6 +34,8 @@
         id="email"
         required
         class="form__input"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+      title="Please enter a valid email address."
       />
     </label>
     <label for="rating" class="form__label">
@@ -53,7 +55,7 @@
       <img src="Icon.png" alt="icon" class="form__btn-span" />
       <span> Cancel </span>
     </button>
-    <button type="submit" class="form__btn-send" form="form" (click)="submitRating($event)">
+    <button type="submit" class="form__btn-send" form="form" (click)="submitRating($event)" >
       <img src="Vector.png" alt="vector" class="form__btn-span" />
       <span> Send </span>
     </button>
